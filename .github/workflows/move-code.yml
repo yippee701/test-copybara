@@ -21,3 +21,4 @@ jobs:
             nx.json||externals/blog/nx.json
             tsconfig.base.json||externals/blog/tsconfig.base.json
             workspace.json||externals/blog/workspace.json
+
