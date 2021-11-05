@@ -13,11 +13,11 @@ jobs:
         with:
           ssh_key: ${{ secrets.GH_SSH_BOT }}
           access_token: ${{ secrets.GH_TOKEN_BOT }}
-          sot_repo: olivr/nx-copybara
-          destination_repo: olivr/nx-copybara-todos
-          push_include: '.github/workflows/build-pr.yml .github/workflows/move-code.yml apps/todos*/** libs/** externals/todos/** tools/** .*rc .*ignore *.json *.js *.lock'
+          sot_repo: yippee701/nx-copybara
+          destination_repo: yippee701/test-copybara
+          push_include: '.github/workflows/build-pr.yml .github/workflows/move-code.yml apps/blog*/** libs/** externals/blog/** tools/** .*rc .*ignore *.json *.js *.lock'
           push_exclude: 'nx.json tsconfig.base.json workspace.json'
           pr_move: |
-            nx.json||externals/todos/nx.json
-            tsconfig.base.json||externals/todos/tsconfig.base.json
-            workspace.json||externals/todos/workspace.json
+            nx.json||externals/blog/nx.json
+            tsconfig.base.json||externals/blog/tsconfig.base.json
+            workspace.json||externals/blog/workspace.json

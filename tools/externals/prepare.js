@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const rootDir = process.env.PWD;
+const rootDir = path.join(__dirname, '../..');//process.env.PWD;
 const extDir = path.join(rootDir, 'externals');
 
 const nxSource = JSON.parse(
