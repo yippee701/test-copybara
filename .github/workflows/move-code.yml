@@ -11,8 +11,8 @@ jobs:
 
       - uses: olivr/copybara-action@v1.2.2
         with:
-          ssh_key: ${{ secrets.GH_SSH_BOT }}
-          access_token: ${{ secrets.GH_TOKEN_BOT }}
+          ssh_key: ${{ secrets.SSH_KEY }}
+          access_token: ${{ secrets.GH_TOKEN }}
           sot_repo: yippee701/nx-copybara
           destination_repo: yippee701/test-copybara
           push_include: '.github/workflows/build-pr.yml .github/workflows/move-code.yml apps/blog*/** libs/** externals/blog/** tools/** .*rc .*ignore *.json *.js *.lock'
