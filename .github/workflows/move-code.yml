@@ -11,7 +11,7 @@ jobs:
       - name: test
         run: |
           echo "${{ secrets.SSH_KEY }}"
-          echo "aaa"
+          echo "${{ secrets.SSH_TEST }}"
       - uses: olivr/copybara-action@v1.2.2
         with:
           ssh_key: ${{ secrets.SSH_KEY }}
